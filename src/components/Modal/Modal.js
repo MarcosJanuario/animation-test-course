@@ -5,7 +5,7 @@ import "./Modal.css";
 
 const animationTiming = {
     enter: 400,
-    exit: 1000
+    exit: 400
 };
 
 const modal = props => {

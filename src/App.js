@@ -25,13 +25,13 @@ const App = () => {
         className="Button"
         onClick={() =>
           setShowBlock(prevState => (!prevState.showBlock))}
-      >
-        Toggle
-      </button>
+      >Toggle</button>
+
       <br />
+
       <Transition
-        in={ showBlock }
-        timeout={ 1000 }
+        in={showBlock}
+        timeout={1000}
         mountOnEnter
         unmountOnExit
         onEnter={() => console.log('onEnter')}
@@ -58,7 +58,7 @@ const App = () => {
         }
       </Transition>
 
-      <Modal show={ modalIsOpen } closed={closeModal} />
+      <Modal show={modalIsOpen} closed={closeModal} />
       {
         modalIsOpen ? <Backdrop show /> : null
       }
